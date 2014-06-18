@@ -1,6 +1,6 @@
 #if !defined(_mathops_H)
 # define _mathops_H (1)
-# include <libs/ogg/ogg.h>
+# include <ogg/ogg.h>
 
 # ifdef __GNUC_PREREQ
 #  if __GNUC_PREREQ(3,4)

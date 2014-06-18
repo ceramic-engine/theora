@@ -21,8 +21,8 @@
 # if defined(HAVE_CONFIG_H)
 #  include <config.h>
 # endif
-# include "libs/theora/codec.h"
-# include "libs/theora/theora.h"
+# include "theora/codec.h"
+# include "theora/theora.h"
 
 # if defined(_MSC_VER)
 /*Disable missing EMMS warnings.*/

@@ -28,9 +28,9 @@
 #define THEORAPLAY_MUTEX_T     pthread_mutex_t
 #endif
 
-#include "libs/theora/theoraplay.h"
-#include "libs/theora/theoradec.h"
-#include "libs/vorbis/codec.h"
+#include "theora/theoraplay.h"
+#include "theora/theoradec.h"
+#include "vorbis/codec.h"
 
 #define THEORAPLAY_INTERNAL 1
 
@@ -84,14 +84,14 @@ static unsigned char *ConvertVideoFrame420ToIYUV(const th_info *tinfo,
 // RGB
 #define THEORAPLAY_CVT_FNNAME_420 ConvertVideoFrame420ToRGB
 #define THEORAPLAY_CVT_RGB_ALPHA 0
-#include "libs/theora/theoraplay_cvtrgb.h"
+#include "theora/theoraplay_cvtrgb.h"
 #undef THEORAPLAY_CVT_RGB_ALPHA
 #undef THEORAPLAY_CVT_FNNAME_420
 
 // RGBA
 #define THEORAPLAY_CVT_FNNAME_420 ConvertVideoFrame420ToRGBA
 #define THEORAPLAY_CVT_RGB_ALPHA 1
-#include "libs/theora/theoraplay_cvtrgb.h"
+#include "theora/theoraplay_cvtrgb.h"
 #undef THEORAPLAY_CVT_RGB_ALPHA
 #undef THEORAPLAY_CVT_FNNAME_420
 

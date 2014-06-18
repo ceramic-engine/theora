@@ -3,7 +3,7 @@
 #include <limits.h>
 #include "apiwrapper.h"
 #include "encint.h"
-#include "libs/theora/theoraenc.h"
+#include "theora/theoraenc.h"
 
 
 
